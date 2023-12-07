@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RestudentRegistraction">
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:background="@drawable/semi_transparent_white"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="113dp"
+            android:layout_height="84dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="89dp"
+            android:src="@drawable/splash_image" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:text="Restudent Registration"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:required="true"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border_black"
+            android:layout_below="@id/title"
+            android:hint="Restaurant Name"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/editTextRestaurantCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/editTextRestaurantName"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border_black"
+            android:hint="City"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/editTextRestaurantEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/editTextRestaurantCity"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border_black"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/editTextRestaurantPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/editTextRestaurantEmail"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border_black"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/editTextRestaurantPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/editTextRestaurantPhone"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border_black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/registerRestaurantButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextRestaurantPassword"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:text="Register"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
